@@ -181,4 +181,53 @@
       return false;
     });
 
+
+    /** Book now button */
+
+    let bookButton = document.querySelectorAll(".btn");
+
+    apartments = [
+
+    {
+        title:"Zemi beach house",
+        price: "200 USD"
+        
+
+
+
+
+
+    },
+    {
+        title: "Lukenya hills",
+        price: "250 USD"
+
+
+    },
+    {
+        title: "One Admore",
+        price: "35o USD"
+
+
+    }
+
+
+    ]
+
+    for(let i=0; i<apartments.length; i++){
+        bookButton[1].addEventListener("click", function(){
+
+
+            document.write(`
+
+            <h1>Great Choice </h1>
+            
+            <h2> The price of the apartment is: ${apartments[i].price} </h2>
+            <h3> Login into our account to complete the process </h3>     
+
+            `);
+        })
+
+    }
+
     
